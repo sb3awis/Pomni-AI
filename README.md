@@ -59,6 +59,8 @@ npm start
 </h4>
 
 [![Website](https://img.shields.io/badge/Website-Cavirox-orange?style=for-the-badge&logo=website)](https://cavirox.com)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-Channel-blue?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029Vb7YDnD0gcfA4FhQrp1D)
+ 
 
 </div>
 
