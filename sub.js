@@ -1,12 +1,16 @@
 import { SubBots } from "meowsab";
 
 async function sub(client) {
+
+  global.subBots = new SubBots(client.commandSystem)
+  
+  SubBots.pariCode("ABCD1234") // Pairing
  
-  global.subBots = new SubBots(client.commandSystem);
   const { config } = client;
 
+ 
   await global.subBots.setConfig({
-    commandsPath: config.commandsPath || './commands',
+    commandsPath: config.commandsPath || './plugins',
     owners: config.owners,
     prefix: config.prefix,
     info: config.info,
@@ -40,9 +44,10 @@ async function sub(client) {
 
     try {
       if (body === "تست") {
-        await sock.sendMessage(msg.key.remoteJid, {
-          text: "🤖 SubBots ~ VII7"
-        });
+    await sock.sendMessage(msg.key.
+        remoteJid, {
+        react: { text: "✅", key: msg.key }
+       });
       }
 
     } catch (error) {

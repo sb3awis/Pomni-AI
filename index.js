@@ -7,7 +7,7 @@ import sub from './sub.js';
 const client = new Client({
   phoneNumber: '20123456789', // Bot number
   prefix: [".", "/", "!"],
-  fromMe: false,
+  fromMe: false, 
   owners: [
   // Owner 1
     { name: "VA", lid: "247579682029763@lid", jid: "201066826750@s.whatsapp.net" },
@@ -18,6 +18,7 @@ const client = new Client({
   // Owner 4 
    { name: "عمورتي", jid: "201050079089@s.whatsapp.net", lid: "51664513925368@lid" }
   ],
+  settings: { noWelcome: true },
   commandsPath: './plugins'
 });
 
@@ -32,7 +33,7 @@ if (!global.db) {
 /* =========== Config ========== */
 const { config } = client;
 config.info = { 
-  nameBot: "♡ 𝙋𝙊𝙉𝙈𝙄 🎪 〈", 
+  nameBot: "♡ 𝙋𝙊𝙈𝙉𝙄 🎪 〈", 
   nameChannel: "𝐕𝐈𝐈7 ~ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🕷️", 
   idChannel: "120363225356834044@newsletter",
   urls: {
@@ -60,6 +61,26 @@ sub(client)
   }
 }, 2000);
 
+
+/* =========== Catch Errors ========== */
 process.on('uncaughtException', (e) => {
     if (e.message.includes('rate-overlimit')) {}
 });
+
+process.on('unhandledRejection', (err) => {
+    console.error('Unhandled Rejection:', err)
+});
+
+
+/* 
+=========== Memory Monitor ========== 
+
+setInterval(() => {
+    const used = process.memoryUsage().rss / 1024 / 1024
+    if (used > 800) {
+        console.log(`🔄 Bot memory full (${used.toFixed(1)}MB), restarting...`)
+        process.exit(1) 
+    }
+}, 300_000) 
+
+*/
