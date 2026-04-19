@@ -10,7 +10,7 @@ const client = new Client({
   fromMe: false, 
   owners: [
   // Owner 1
-    { name: "Ez-Ashraf", lid: "247579682029763@lid", jid: "212656317785@s.whatsapp.net" }
+    { name: "Ez-Ashraf", lid: "163599683219665@lid", jid: "212656317785@s.whatsapp.net" }
   ],
   settings: { noWelcome: true },
   commandsPath: './plugins'
@@ -27,9 +27,9 @@ if (!global.db) {
 /* =========== Config ========== */
 const { config } = client;
 config.info = { 
-  nameBot: "Senior bot", 
-  nameChannel: "𝐕𝐈𝐈7 ~ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🕷️", 
-  idChannel: "120363225356834044@newsletter",
+  nameBot: "VIOLET BOT    |  فــيـــــولــيــت بــوت", 
+  nameChannel: "VIOLET BOT    |  فــيـــــولــيــت بــوت", 
+  idChannel: "",
   urls: {
     repo: "https://github.com/deveni0/Pomni-AI",
     api: "https://emam-api.web.id",
