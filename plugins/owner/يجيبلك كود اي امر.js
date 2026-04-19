@@ -22,8 +22,8 @@ let handler = async (m, { conn, isROwner, usedPrefix, command, text }) => {
         if (stderr.trim()) m.reply(stderr);
     }
 };
-handler.help = ["ميزه"];
-handler.tags = ['owner'];
+handler.usage = ["ميزه"];
+handler.category = ['owner'];
 handler.command = /^(ميزه)$/i;
 handler.rowner = true;
 
