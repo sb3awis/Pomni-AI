@@ -22,6 +22,6 @@ handler.command = ["اقبل_ريكوستات"];
 handler.usage = ['اقبل_ريكوستات', 'اقبل_الطلبات'];
 handler.category = "admin";
 handler.admin = true;
-hanfler.botAdmin = true
+handler.botAdmin = true
 
 export default handler;
