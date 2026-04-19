@@ -16,6 +16,6 @@ handler.command = ["الريكوستات", "الطلبات"];
 handler.usage = ['الريكوستات'];
 handler.category = "admin";
 handler.admin = true;
-hanfler.botAdmin = true
+handler.botAdmin = true
 
 export default handler;
