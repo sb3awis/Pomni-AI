@@ -3,7 +3,7 @@ let handler = async (m, { conn, bot }) => {
   
   let quoted = {
     key: { fromMe: false, participant: '0@s.whatsapp.net', remoteJid: 'status@broadcast' },
-    message: { conversation: 'Pomni AI ❤️💙' }
+    message: { conversation: 'VIOLET BOT    |  فــيـــــولــيــت بــوت' }
   };
   const num = bot.config.owners[0].jid.split("@")[0];
   let vcard = `BEGIN:VCARD
@@ -21,7 +21,7 @@ END:VCARD`;
       externalAdReply: {
         title: '𝑇𝛨𝛯 𝛩𝑊𝛮𝛯𝑅',
         body: watermark,
-        sourceUrl: 'https://whatsapp.com/channel/0029Vb3UUKz3QxS3bgWmTc3x',
+        sourceUrl: '',
         thumbnailUrl: img,
         mediaType: 1,
         showAdAttribution: true,
