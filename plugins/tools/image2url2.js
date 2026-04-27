@@ -1,7 +1,7 @@
 import fs from 'fs';
 import axios from 'axios';
 import FormData from 'form-data';
-import { uploadToQuax } from "../../system/utils.js";
+import { uploadToCatbox } from "../../system/utils.js";
 
 const handler = async (m, { conn, command }) => {
   const q = m.quoted ? m.quoted : m;
@@ -10,7 +10,7 @@ const handler = async (m, { conn, command }) => {
   if (!mime) throw '*❲ ❤️ ❳ ~ اعمل ريبلاي علي الصوره او الفيديو أو الصوت ~ ❲ 💙 ❳ *';
   
   const media = await q.download();
-  const link = await uploadToQuax(media);
+  const link = await uploadToCatbox(media);
   
   await conn.sendButton(m.chat, {
     imageUrl: link,
@@ -33,8 +33,8 @@ const handler = async (m, { conn, command }) => {
   }, m);
 };
 
-handler.usage = ["لرابط"];
+handler.usage = ["لرابط2"];
 handler.category = "tools";
-handler.command = ['لرابط', 'image2url'];
+handler.command = ['لرابط2', 'image2url2'];
 
 export default handler;

@@ -22,6 +22,14 @@ await conn.sendCarousel(m.chat, {
         { name: 'cta_copy', params: { display_text: '📋 Copy URL', copy_code: 'https://example.com/img2' } }
       ]
     },
+{
+      mediaUrl: 'https://qu.ax/x/6GwxA.mp4',
+      mediaType: 'video',
+      bodyText: 'Intro Video',
+      buttons: [
+        { name: 'cta_url', params: { display_text: 'Details', url: 'https://example.com/details' } }
+      ]
+    },
     {
       imageUrl: 'https://i.top4top.io/p_37000qovy1.jpg',
       bodyText: '*Anime Girl 3*',

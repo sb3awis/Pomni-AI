@@ -27,7 +27,7 @@ const run = async (m, { conn, bot }) => {
 };
 
 run.command = ["اذاعه"];
-handler.usage = ["اذاعه"];
-handler.category = "owner";
+run.usage = ["اذاعه"];
+run.category = "owner";
 run.owner = true;
 export default run;
